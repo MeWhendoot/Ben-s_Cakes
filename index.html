@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ben's Cakes | Home</title>
+    <title>Home | Ben's Cakes</title>
     <link href="style.css" rel="stylesheet">
     <script>
         document.addEventListener("DOMContentLoaded", () => {
+
+            // Responsive navigation bar toggler.
             const navToggle = document.querySelector(".nav-toggle");
             const navMenu = document.querySelector(".nav-menu");
 
@@ -14,6 +16,7 @@
                 navMenu.classList.toggle("show");
             });
 
+            // Image carousel
             let carouselIndex = 0;
             const carouselImages = document.querySelector(".carousel-images");
             const totalImages = document.querySelectorAll(".carousel-images img").length;
@@ -50,20 +53,26 @@
             <img src="assets/cakes_1.jpg" alt="Cake 2">
             <img src="assets/cake_2.jpeg" alt="Cake 3">
         </div>
+
         <div class="container" id="about">
             <h2>Fortnite</h2>
             <p>Battle royale</p>
         </div>
+
         <div class="container" id="cakes">
             <h2>Fortnite 2</h2>
             <p>Battle royale 2</p>
         </div>
+
         <div class="container" id="contact">
             <h2>Fortnite 3</h2>
             <p>Battle royale 3</p>
         </div>
 
     <footer>
+        <p><a href="https://www.facebook.com"><img src="assets/facebook_logo.jpg" alt="Facebook link" style="width:30px;height:30px;"></a> <a href="https://www.instagram.com"><img src="assets/insta_logo.jpg" alt="Instagram link" style="width:30px;height:30px;"></a> <a href="https://www.twitter.com"><img src="assets/twt_logo.png" alt="Twitter link" style="width:35px;height:30px;"></a></p>
+
+        <br>
         <p>&copy; 2024 Ben's Cakes. All rights reserved.</p>
     </footer>
 </body>
