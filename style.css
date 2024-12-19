@@ -131,6 +131,19 @@ nav a:active {
     color: var(--color-text);
 }
 
+.container_gal {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--color-highlight);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: var(--color-text);
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+}
+
 footer {
     text-align: center;
     padding: 10px 0;

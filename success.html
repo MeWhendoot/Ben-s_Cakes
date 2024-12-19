@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Ben's Cakes</title>
+    <title>Home | Ben's Cakes</title>
     <link href="style.css" rel="stylesheet">
     <script>
         document.addEventListener("DOMContentLoaded", () => {
+
+            // Responsive navigation bar toggler.
             const navToggle = document.querySelector(".nav-toggle");
             const navMenu = document.querySelector(".nav-menu");
 
@@ -14,6 +16,7 @@
                 navMenu.classList.toggle("show");
             });
 
+            // Image carousel
             let carouselIndex = 0;
             const carouselImages = document.querySelector(".carousel-images");
             const totalImages = document.querySelectorAll(".carousel-images img").length;
@@ -35,66 +38,31 @@
         <nav class="nav-menu">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="gallery.html" style="color: #996e72">Gallery</a>
+            <a href="gallery.html">Gallery</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 
     <div class="hero">
-        <h2>Design Gallery</h2>
+        <h2>Success!</h2>
     </div>
 
-    <div class="container_gal" id="">
-        <div class="gal_image">
-            <img src="assets/cake_1.jpg" style="max-width:100%;width:500px;height:auto;">
-        </div> 
-        <div class="gal_text">
-            <h2>Wedding Cake</h2>
-            <p>This elegant cake is perfect for weddings, featuring intricate floral designs and a classic white finish.</p>
+        <div class="container" id="about">
+            <h2>Your message has been sent, we will get back to you as soon as possible!</h2>
+            <p>If you wish to contact us directly at any time, please email us @[EMAIL]</p>
         </div>
-    </div>
-
-    <div class="container_gal" id="">
-        <div class="gal_image">
-            <img src="assets/cake_2.jpeg" style="max-width:100%;width:500px;height:auto;">
-        </div> 
-        <div class="gal_text">
-            <h2>Birthday Cake</h2>
-            <p>A fun and colorful birthday cake designed to brighten anyone's special day.</p>
-        </div>
-    </div>
-
-    <div class="container_gal" id="">
-        <div class="gal_image">
-            <img src="assets/cakes_1.jpg" style="max-width:100%;width:500px;height:auto;">
-        </div> 
-        <div class="gal_text">
-            <h2>Display</h2>
-            <p>Our signature dessert table display, showcasing a variety of mini cakes and treats.</p>
-        </div>
-    </div>
-
-    <div class="container_gal" id="">
-        <div class="gal_image">
-            <img src="assets/cakes_2.jpeg" style="max-width:100%;width:500px;height:auto;">
-        </div> 
-        <div class="gal_text">
-            <h2>Chocolate Cake</h2>
-            <p>A luxurious chocolate cake with gold accents, ideal for upscale celebrations.</p>
-        </div>
-    </div>
 
     <footer>
         <p><a href="https://www.facebook.com"><img src="assets/facebook_logo.jpg" alt="Facebook link" style="width:30px;height:30px;"></a> <a href="https://www.instagram.com"><img src="assets/insta_logo.jpg" alt="Instagram link" style="width:30px;height:30px;"></a> <a href="https://www.twitter.com"><img src="assets/twt_logo.png" alt="Twitter link" style="width:35px;height:30px;"></a></p>
-
+    
         <br>
-
+    
         <p>@[EMAIL]</p>
         <p>[PHONE]</p>
-        
+            
         <br>
-
-        <p>&copy; 2024 Ben's Cakes. All rights reserved.</p>
+    
+            <p>&copy; 2024 Ben's Cakes. All rights reserved.</p>
     </footer>
 </body>
 </html>
